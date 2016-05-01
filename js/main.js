@@ -55,17 +55,6 @@ $(document).ready(function() {
         circle.bindPopup('<b>Crystal Mountain Ski Resort</b>');
   
 	
-	//Stretch: Clicks on map return lat/long 
-	var popup = L.popup();
-
-	function onMapClick(e) {
-    	popup
-        	.setLatLng(e.latlng)
-        	.setContent("You clicked the map at" + e.latlng.toString())
-        	.openOn(map);
-	}
-
-	map.on('click', onMapClick);
 	
  });
     
